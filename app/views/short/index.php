@@ -7,10 +7,10 @@
     <table class="mt-3 mb-5 table table-striped table-bordered table-hover">
         <thead class="table-dark">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Short</th>
-                <th scope="col">URL</th>
-                <th scope="col">Action</th>
+                <th style="width: 5%" scope="col">#</th>
+                <th style="width: 30%" scope="col">Short</th>
+                <th style="width: 50%" scope="col">URL</th>
+                <th style="width: 15%" scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +30,7 @@
                             <?= $short["long_url"] ?>
                         </a>
                     </td>
-                    <td>
+                    <td class="text-center">
                         <a href="<?= BASE_URL ?>/short/delete/<?= $short["id"] ?>"
                             class="badge text-bg-danger text-decoration-none" onclick="confirmDelete(event)">
                             <i class="fa-solid fa-trash"></i> Hapus
