@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 04, 2023 at 07:19 AM
+-- Generation Time: Dec 05, 2023 at 04:47 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -30,16 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `shorts` (
   `id` int NOT NULL,
   `id_user` int NOT NULL,
-  `long_link` varchar(200) NOT NULL,
-  `shrt_link` varchar(100) NOT NULL
+  `long_url` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `short_url` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `shorts`
---
-
-INSERT INTO `shorts` (`id`, `id_user`, `long_link`, `shrt_link`) VALUES
-(1, 1, 'asaa', 'dadaad');
 
 -- --------------------------------------------------------
 
@@ -53,14 +46,6 @@ CREATE TABLE `users` (
   `username` varchar(20) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `nama`, `username`, `password`) VALUES
-(6, 'Admin', 'admin', '$2y$10$.0iAGiVzT0LtNU4Be4mqn.obU8x4IrtqKP8DDj2KTCUr8Q.TQf3IK'),
-(7, 'Gilang', 'gilang123', '$2y$10$fDqZd7DEiFMth0.0xXDDD.rUAwnIPLl6qmsxlMWG/n8Wo1Gh6yl7a');
 
 --
 -- Indexes for dumped tables
@@ -86,7 +71,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `shorts`
 --
 ALTER TABLE `shorts`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`

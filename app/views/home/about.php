@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="display-4 mb-3">Tentang Pemendek URL Kami</h2>
+                    <h2 class="mb-3">Tentang Pemendek URL Kami</h2>
                     <p class="lead">
                         Selamat datang di proyek Pemendek URL/Shortener Link kami! Platform kami dirancang untuk
                         memberikan
